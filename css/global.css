@@ -1,0 +1,191 @@
+body{
+    background-color: #0B1E56;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+header {
+    font-family: 'Oswald';
+}
+section:first-of-type > .slidebox > ul > li > a > div > div,
+section:first-of-type > .noticebox,
+.gamelist > div > ul > li,
+.gamelist > ul > li > a,
+.gamelist > div > a,footer > div > ul > li > a{
+    font-family: 'Noto Sans KR';
+}
+
+
+
+@media screen and (min-width : 1280px) {
+    
+    header {
+        padding-top: 50px;
+    }
+    header > div{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    header > div > div:first-of-type{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    header > div > div:first-of-type > h1{
+        width: 25%;
+        margin-right: 16px;
+    }
+    header > div > div:first-of-type > h1 > a > img{
+        width: 100%;
+        display: block;
+    }
+    header > div > div:first-of-type > div:first-of-type{
+        display: flex;
+        width: 75%;
+        justify-content: center;
+        align-self: center;
+    }
+    header > div > div:first-of-type > div:first-of-type > div:first-of-type{
+        width: 64.66%;
+        align-self: center;
+        margin-right: 40px;
+    }
+    header > div > div:first-of-type > div:first-of-type > div:first-of-type > form > input[type="search"]{
+        width: 83%;
+        font-size: 16px;
+        border: 1px solid #0098DA;
+        box-sizing: border-box;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 15px;
+        margin-right: 40px;
+        color: #ffffff;
+    }
+    header > div > div:first-of-type > div:first-of-type > div:first-of-type > form > button{
+        appearance: none;
+        border: none;
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        background: url('../images/search_ico_1.png') left top no-repeat;
+        text-indent: -9999px;
+    }
+    header > div > div:first-of-type > div:first-of-type > div:last-of-type{
+        display: flex;
+    }
+    header > div > div:first-of-type > div:first-of-type > div:last-of-type > a:first-of-type{
+        margin-right: 40px;
+        font-size: clamp(20px, 2vw, 24px);
+        align-self: center;
+        color: #ffffff;
+        font-weight: 500;
+
+    }
+    header > div > div:last-of-type > nav{
+        margin-left: 8.43%;
+        width: 45%;
+    }
+    header > div > div:last-of-type > nav > ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    header > div > div:last-of-type > nav > ul > li{
+        font-size: 24px;
+        font-weight: 500;
+        padding: 5px 5px 10px 5px;
+    }
+    header > div > div:last-of-type > nav > ul > li:not(:first-child){
+        margin-left: 50px;
+    }
+    header > div > div:last-of-type > nav > ul > li > b{
+        font-weight: 500;
+    }
+    header > div > div:last-of-type > nav > ul > li > a,
+    header > div > div:last-of-type > nav > ul > li > b{
+        color: #ffffff;
+        transition: color 0.2s ease-in-out;
+    }
+    header > div > div:last-of-type > nav > ul > li:hover > a,
+    header > div > div:last-of-type > nav > ul > li:hover > b{
+        color: #0098DA;
+    }
+    header > div > div:last-of-type > nav > ul > li:first-child{
+        position: relative;
+        background: url('../images/downarrow.png')right center no-repeat;
+        padding-right: 20px;
+    }
+    header > div > div:last-of-type > nav > ul > li:first-child > ol{
+        position: absolute;
+        min-width: 200px;
+        background-color: #161c2d;
+        border-top: 5px solid #0098DA;
+        box-sizing: border-box;
+        top: 100%;
+        list-style: none;
+        padding: 12px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        z-index: 10000;
+    }
+    header > div > div:last-of-type > nav > ul > li:first-child:hover > ol{
+        visibility: visible;
+        opacity: 1;
+    }
+    header > div > div:last-of-type > nav > ul > li:first-child > ol > li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    header > div > div:last-of-type > nav > ul > li:first-child > ol > li > a{
+        color: #ffffff;
+        font-size: 16px;
+        transition: color 0.2s ease-in-out;
+    }
+    header > div > div:last-of-type > nav > ul > li:first-child > ol > li:hover a{
+        color: #0098DA;
+    }
+    footer{
+        background-color: #161c2d;
+    }
+    footer > div {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+    footer > div > ul{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        list-style: none;
+    }
+    footer > div > ul > li > a{
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 14px;
+        transition: color 0.2s ease-in;
+    }
+    footer > div > ul > li > a:hover{
+        color: #0098DA;
+    }
+
+
+    footer > div > div{
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+    footer > div > div > *{
+        display: block;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    footer > div > div > address{
+        font-style: normal;
+    }
+    footer > div > div > address > strong{
+        font-weight: 400;
+    }
+
+}
